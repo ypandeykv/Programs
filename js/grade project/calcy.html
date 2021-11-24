@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>student grade calculator</title>
+<link rel="stylesheet" href="calcy.css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<center><h2 style="color:green;">student grade calculator</h2></center>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTER YOUR MATH MARKS:
+<input type="number"  id="m"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTER YOUR SCIENCE MARKS:
+<input type="number"  id="s"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTER YOUR HINDI MARKS:
+<input type="number"  id="h"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENTER your ENGLISH MARKS:
+<input type="number"  id="e"><br><br>
+<center><input type="submit" value="calculate" class="btn" onclick="f1()"></center>
+<center><p id="demo"></p></center>
+</div>
+</div>
+<script>
+function f1()
+{
+var math=document.getElementById("m").value;
+var science=document.getElementById("s").value;
+var hindi=document.getElementById("h").value;
+var english=document.getElementById("e").value;
+if(math==""||science==""||hindi==""||english=="")
+{
+alert("please fill up all details");
+}
+else if(math>100 ||science>100 ||hindi>100 ||english>100)
+{
+alert("marks should not be greater than 100");
+}
+else
+{
+var total=parseInt(math)+parseInt(science)+parseInt(hindi)+parseInt(english);
+var per=total*100/400;
+alert("your total is"+total);
+document.getElementById("demo").innerHTML="your total marks are "+total + " and percentage is "+per;
+}
+}
+</script>
+</body>
+</html>

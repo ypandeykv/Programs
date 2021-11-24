@@ -1,0 +1,40 @@
+.container
+{
+	height:100%;
+	width:100%;
+	background-color:red;
+	position:relative;
+}
+body
+{
+	margin:0px;
+	padding:0px;
+}
+.row
+{
+	height:400px;
+	width:60%;
+	background-color:blue;
+	margin-top:100px;
+	margin-left:190px;
+	position:absolute;
+}
+input
+{
+	border:2px solid black;
+	border-radius:20px;
+	font-size:18px;
+}
+.btn
+{
+color:white;
+background-color:cyan;	
+}
+.btn:hover
+{
+	background-color:yellow;
+}
+input:hover
+{
+	background-color:orange;
+}
